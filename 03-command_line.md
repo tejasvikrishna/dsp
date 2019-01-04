@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* show current working directory path = pwd
+* creating a directory = mkdir
+* deleting a directory = rmdir when empty and rm -rf when it has contents
+* creating a file using `touch` command = touch creates a file without opening it (with a specified filename)
+* deleting a file = rm
+* renaming a file = mv
+* listing hidden files = ls -a
+* copying a file from one directory to another = mv
+* changing permissiond of files and directories = chmod
+* print text = echo
 
 ---
 
@@ -35,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls` = Lists all files and directories in PWD 
+`ls -a` = ls but also displays hidden files 
+`ls -l`  = ls but also shows file or directory, size, modified date and time, file or folder name and owner of file and its permissions
+`ls -lh` = "ls -l" but shows sizes in human readable format 
+`ls -lah` = combines "ls -l", "ls -a" and "ls -h"
+`ls -t` = ls but sorts by file timestamp 
+`ls -Glp` = "ls -l" but also includes a '/' at the end of directory names and also colorizes the list
 
 ---
 
@@ -43,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -1
+ls -R
+ls -d
+ls -n
+ls -f
 
 ---
 
@@ -51,7 +70,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs is a command that takes input from the left (piped) and then run a command using parsed parts as arguments foe that command.
 
+Example: echo 1 2 3 | xargs touch will create 3 files named 1, 2 and 3 respectively.
  
 
